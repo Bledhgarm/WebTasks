@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(25, 25, 25);
+}
+
+.simplebar-track.simplebar-vertical {
+    background-color: rgb(93, 93, 93);
+    width: 8px;
+    border-radius: 5px;
+
+}
+
+.simplebar-content-wrapper {
+    padding-right: 30px;
+}
+
+.simplebar-scrollbar:before {
+    position: absolute;
+    content: '';
+    background: rgb(255, 255, 255);
+    border-radius: 7px;
+    left: 2px;
+    right: 2px;
+    opacity: 1;
+}

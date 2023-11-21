@@ -10,6 +10,8 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
   },
   "dependencies": {
+    "resize-observer-polyfill": "^1.5.1",
+    "simplebar": "^6.2.5",
     "vue": "^3.3.4"
   },
   "devDependencies": {

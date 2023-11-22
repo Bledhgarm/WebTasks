@@ -9,12 +9,12 @@
 </template>
 
 <style scoped>
-
 button {
     border: none;
     margin: 5px;
     border-radius: 5px;
 }
+
 button.enter {
     background-color: rgb(69, 69, 69);
     color: #fff;
@@ -28,5 +28,6 @@ button.registration {
 button.profile {
     background-color: rgb(25, 25, 25);
 }
+
 
 </style>

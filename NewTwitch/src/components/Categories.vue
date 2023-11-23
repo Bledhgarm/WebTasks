@@ -1,35 +1,32 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const categories = [
+    {'text': "Counter-strike 2", 'picture': "../src/assets/cs2.jpg"},
+    {'text': "Dota 2", 'picture': "../src/assets/dota.jpg"},
+    {'text': "Fortnite", 'picture': "../src/assets/fortnite.jpg"},
+    {'text': "GTA 5", 'picture': "../src/assets/gta5.jpg"},
+    {'text': "Just chatting", 'picture': "../src/assets/irl.jpg"},
+    {'text': "League of legends", 'picture': "../src/assets/lol.jpg"},
+    {'text': "Minecraft", 'picture': "../src/assets/minecraft.jpg"},
+]
+</script>
 
 <template>
-
-    <p>Категории, которые могут вам понравиться</p>  
+    <p>Категории, которые могут вам понравиться</p>
     <div id="categories">
-        <img src="../assets/cs2.jpg">
-        <p class="titles">Counter-strike 2</p>
-        <img src="../assets/dota.jpg">
-        <p class="titles">Dota 2</p>
-        <img src="../assets/fortnite.jpg">
-        <p class="titles">Fortnite</p>
-        <img src="../assets/gta5.jpg">
-        <p class="titles"></p>
-        <img src="../assets/irl.jpg">
-        <p class="titles">Just chatting</p>
-        <img src="../assets/lol.jpg">
-        <p class="titles">League of legends</p>
-        <img src="../assets/minecraft.jpg">
-        <p class="titles">Minecraft</p>
-        
+        <div v-for="category of categories">
+            <img :src="category.picture">
+            <p>{{ category.text }}</p>
+        </div>
     </div>
-
 </template>
 
 <style scoped>
-    p {
-        color: #fff;
-    }
-    div.categories {
-        width: 180px;
-        height: 250px;
-        margin: 5px;
-    }
+p {
+    color: #fff;
+}
+
+#categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+}
 </style>

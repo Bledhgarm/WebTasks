@@ -1,12 +1,14 @@
 <script setup lang="ts"></script>
 
 <template>
-    <img src="../assets/animegirl.gif" alt="main video">
-
+    <div id="component">
+        <img src="../assets/animegirl.gif" alt="main video">
+    </div>
 </template>
 
 <style scoped>
-* {
-    border-style: solid;
+#component {
+    display: grid;
+    justify-content: center;
 }
 </style>

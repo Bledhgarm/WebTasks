@@ -1,37 +1,26 @@
 <script setup lang="ts"></script>
 
 <template>
-    <div id="header">
+    <div id="component">
         <form action="" method="" class="ButtonSearch">
-            <div id="search">
-                <input type="text" placeholder="Поиск">
-                <button class="b-prof" type="submit"><i class="fa fa-search"></i></button>
-            </div>
+            <input type="text" placeholder="Поиск">
+            <button type="submit"><i class="fa fa-search"></i></button>
         </form>
-        
     </div>
-    
 </template>
 
 <style scoped>
-button.b-prof {
+button {
     background-color: rgb(69, 69, 69);
     border: none;
     border-radius: 5px;
 }
 
-* {
-    margin: 0;
+button:hover {
+    background-color: red;
 }
 
-#header {
-    display: grid;
-    grid-template-columns: 100px auto 60px 80px;
-     
-}
-
-
-#search {
+#component {
     margin: 0 auto;
 }
 </style>

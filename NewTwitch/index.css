@@ -22,3 +22,9 @@ body {
     right: 2px;
     opacity: 1;
 }
+
+#app {
+    display: grid;
+    grid-template-rows: 2rem auto;
+    height: 100vh;
+}

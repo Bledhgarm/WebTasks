@@ -7,9 +7,10 @@ import categories from './components/Categories.vue'
 </script>
 
 <template>
-    <div class="page">
-        <search></search>
+    <div id="page">
         <auth></auth>
+        <search></search>
+        
         <rec></rec>
         <mainvideo></mainvideo>
         <categories></categories>
@@ -17,16 +18,10 @@ import categories from './components/Categories.vue'
 </template>
 
 <style scoped>
-div.page {
-    display: grid;
-    /* Три колонки */
-    grid-template-columns: auto auto auto;
-    /* Два ряда */
-    grid-template-rows: auto auto;
-    /* Автоматическое размещение в ряд */
-    grid-auto-flow: row;
-    /* Отступы между ячейками */
-    gap: 20px;
-}
 
+#page {
+    display: grid;
+    grid-template-columns: 15% auto;
+    margin-top: 2rem;
+}
 </style>

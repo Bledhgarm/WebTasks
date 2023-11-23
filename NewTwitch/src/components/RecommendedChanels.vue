@@ -1,51 +1,36 @@
 <script setup lang="ts">
 import 'simplebar';
 import 'simplebar/dist/simplebar.css';
-
+const chanels = [
+    "Bratishkinof",
+    "Zubarefff",
+    "Manyrin",
+    "Zloy",
+]
 </script>
 
 <template>
-    <div class="block" data-simplebar data-simplebar-auto-hide="false">
-        <!-- тут пока заглушка, чтобы посмотреть что simplebar работает -->
-        <p>Далеко-далеко за словесными горами.</p> 
-        <p>Рукопись все родного не.</p>
-        <p>Но вопрос океана бросил!</p>
-        <p>Жизни большого текстами дорогу!</p>
-        <p>Пунктуация речью единственное ее.</p>
-        <p>Курсивных заголовок ему снова?</p>
-        <p>Себя взобравшись прямо города?</p>
-        <p>Ты буквоград предупреждал подпоясал.</p>
-        <p>Свою одна которое жаренные?</p>
-        <p>Сих образ жаренные даже?</p>
-        <p>Что, маленькая свой? Ему!</p>
-        <p>Коварный одна меня это!</p>
-        <p>Составитель точках курсивных имеет.</p>
-        <p>Свое домах подзаголовок буквенных.</p>
-        <p>Путь предложения меня приставка.</p>
-        <p>Всеми рот эта взгляд.</p>
-        <p>Это безорфографичный последний злых!</p>
-        <p>Путь моей маленькая запятых.</p>
-        <p>Грустный предупреждал родного ведущими.</p>
-        <p>Рыбного дороге от всех повстречался.</p>
-        <p>Буквоград своего она щеке.</p>
-        <p>Власти возвращайся курсивных реторический.</p>
-        <p>Вскоре на берегу своих безорфографичный.</p>
-        <p>Моей продолжил за диких?</p>
-        <p>Точках грамматики даль обеспечивает!</p>
-        <p>Залетают вскоре гор продолжил.</p>
-        <p>Подзаголовок предложения решила повстречался!</p>
-        <p>Имеет коварных страна себя.</p>
-        <p>Путь диких использовало ipsum?</p>
-        <p>Коварных щеке lorem речью?</p>
+    <div id="block" data-simplebar data-simplebar-auto-hide="false">
+        <div v-for="chanel in chanels">
+            <button> {{ chanel }} </button>
+        </div>
+
     </div>
 </template>
 
 <style scoped>
-div.block {
+
+#block {
     color: #fff;
     max-width: 250px;
     max-height: 700px;
     overflow: auto;
+    display: grid;
+    grid-auto-rows: repeat(auto-fill);
+    justify-content: center;
+    align-items: center;
+    border-style: dashed;
+    margin-right: 2rem;
 }
 
 

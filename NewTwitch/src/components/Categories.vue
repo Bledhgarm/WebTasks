@@ -3,7 +3,7 @@
 <template>
 
     <p>Категории, которые могут вам понравиться</p>  
-    <p class="categories">
+    <div id="categories">
         <img src="../assets/cs2.jpg">
         <p class="titles">Counter-strike 2</p>
         <img src="../assets/dota.jpg">
@@ -19,7 +19,7 @@
         <img src="../assets/minecraft.jpg">
         <p class="titles">Minecraft</p>
         
-    </p>
+    </div>
 
 </template>
 
@@ -27,7 +27,7 @@
     p {
         color: #fff;
     }
-    p.categories {
+    div.categories {
         width: 180px;
         height: 250px;
         margin: 5px;
